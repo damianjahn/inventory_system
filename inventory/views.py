@@ -87,7 +87,7 @@ def edit_mobile(request, pk):
 
 
 def delete_laptop(request, pk):
-    template = 'inv/index.html'
+    template = 'index.html'
     Laptop.objects.filter(id=pk).delete()
 
     items = Laptop.objects.all()
@@ -100,7 +100,7 @@ def delete_laptop(request, pk):
 
 
 def delete_desktop(request, pk):
-    template = 'inv/index.html'
+    template = 'index.html'
     Desktop.objects.filter(id=pk).delete()
 
     items = Desktop.objects.all()
@@ -113,7 +113,7 @@ def delete_desktop(request, pk):
 
 
 def delete_mobile(request, pk):
-    template = 'inv/index.html'
+    template = 'index.html'
     Mobile.objects.filter(id=pk).delete()
 
     items = Mobile.objects.all()
